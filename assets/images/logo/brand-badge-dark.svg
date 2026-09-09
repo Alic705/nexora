@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <path id="badgeTextPathDark" d="M 100, 100 m -68, 0 a 68,68 0 1,1 136,0 a 68,68 0 1,1 -136,0" />
+    <linearGradient id="bdTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+    <linearGradient id="bdLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0062f2" />
+      <stop offset="100%" stop-color="#003bb5" />
+    </linearGradient>
+    <linearGradient id="bdRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#258cfb" />
+      <stop offset="100%" stop-color="#0056d6" />
+    </linearGradient>
+    <filter id="darkGlowBadge" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0062f2" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Dark Deep Navy Frame -->
+  <circle cx="100" cy="100" r="95" fill="#070e38" stroke="#0062f2" stroke-width="2.5" filter="url(#darkGlowBadge)"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1.2" stroke-dasharray="3,3"/>
+
+  <!-- Circular Rotating Brand Typography -->
+  <text font-family="'Montserrat', sans-serif" font-size="11.5" font-weight="800" letter-spacing="3" fill="#ffffff">
+    <textPath href="#badgeTextPathDark" startOffset="0%">
+      NEXORA TECHNOLOGIES • 100% SATISFACTION •
+    </textPath>
+  </text>
+
+  <!-- Inner Center Shield / Dark Hub -->
+  <circle cx="100" cy="100" r="48" fill="#0c1752" stroke="rgba(0, 98, 242, 0.5)" stroke-width="2" />
+
+  <!-- Center Clean Isometric Nexus Mark -->
+  <g transform="translate(78, 77)">
+    <path d="M 22 4 L 38 13.2 L 22 22.4 L 6 13.2 Z" fill="url(#bdTop)" />
+    <path d="M 6 15 L 21 23.6 L 21 41.5 L 6 32.8 Z" fill="url(#bdLeft)" />
+    <path d="M 23 23.6 L 38 15 L 38 32.8 L 23 41.5 Z" fill="url(#bdRight)" />
+    <circle cx="22" cy="22.5" r="2.8" fill="#ffffff" />
+    <circle cx="22" cy="22.5" r="1.5" fill="#00f2fe" />
+  </g>
+</svg>

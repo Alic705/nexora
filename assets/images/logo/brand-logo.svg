@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 56" fill="none" width="100%" height="100%">
+  <defs>
+    <!-- Modern Tech Gradients -->
+    <linearGradient id="cubeTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+    <linearGradient id="cubeLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0062f2" />
+      <stop offset="100%" stop-color="#003bb5" />
+    </linearGradient>
+    <linearGradient id="cubeRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#258cfb" />
+      <stop offset="100%" stop-color="#0056d6" />
+    </linearGradient>
+    <linearGradient id="oraTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#258cfb" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0062f2" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Clean Isometric Nexus Cube Icon -->
+  <g transform="translate(6, 6)" filter="url(#softGlow)">
+    <!-- Top Isometric Plane -->
+    <path d="M 22 4 L 38 13.2 L 22 22.4 L 6 13.2 Z" fill="url(#cubeTop)" />
+    <!-- Left Isometric Plane (With stylized N negative channel) -->
+    <path d="M 6 15 L 21 23.6 L 21 41.5 L 6 32.8 Z" fill="url(#cubeLeft)" />
+    <!-- Right Isometric Plane -->
+    <path d="M 23 23.6 L 38 15 L 38 32.8 L 23 41.5 Z" fill="url(#cubeRight)" />
+    
+    <!-- Dynamic Tech Core Node (Nexus Accent) -->
+    <circle cx="22" cy="22.5" r="2.8" fill="#ffffff" />
+    <circle cx="22" cy="22.5" r="1.5" fill="#00f2fe" />
+  </g>
+
+  <!-- Typography: NEXORA TECHNOLOGIES -->
+  <g transform="translate(60, 0)">
+    <!-- Main Name -->
+    <text x="0" y="32" 
+          font-family="'Montserrat', 'Bai Jamjuree', -apple-system, sans-serif" 
+          font-weight="900" 
+          font-size="25" 
+          letter-spacing="3" 
+          fill="#ffffff">
+      NEX<tspan fill="url(#oraTextGrad)">ORA</tspan>
+    </text>
+    
+    <!-- Subtitle: TECHNOLOGIES -->
+    <text x="2" y="47" 
+          font-family="'Bai Jamjuree', -apple-system, sans-serif" 
+          font-weight="600" 
+          font-size="9" 
+          letter-spacing="5" 
+          fill="#a4c2ee">
+      TECHNOLOGIES
+    </text>
+  </g>
+</svg>
